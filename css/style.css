@@ -22,6 +22,7 @@ a.textlink:hover {font-weight:100;}
 .card {
 	position: relative;
 	display: inline-block;
+	line-height: 0px;
 }
 
 .card .img-top {
@@ -29,13 +30,11 @@ a.textlink:hover {font-weight:100;}
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 99;
-
+	z-index: 0;
 }
 
 .card:hover .img-top {
 	display: inline;
-
 }
 
 .centered {
@@ -103,7 +102,8 @@ ul.cat li {
 	width: 25%; /* this value + 2 should = 33% */
 	font-size: 20px;
 	font-size: 1rem;
-	border: 2px solid #fff;
+	border-right: 2.5px solid #fff;
+	border-left: 2.5px solid #fff;
 	vertical-align: top;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
